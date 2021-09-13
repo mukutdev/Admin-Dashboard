@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- unIcons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- My css  -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-telegram"></i></span>
+                        <span class="brand">Brand</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-house-user"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-user"></i></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-envelope-check"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-question-circle"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-setting"></i></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-lock"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="uil uil-sign-out-alt"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!--  -->
+    <main class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu()">
+                <i class="uil uil-align-left"></i>
+            </div>
+            <div class="search">
+                <label for="">
+                    <i class="uil uil-search-alt"></i> <input type="text" class="search" placeholder="Search here">
+                </label>
+            </div>
+            <div class="user">
+                <img src="./images/profile-pic.png" alt="" srcset="">
+            </div>
+        </div>
+        <!-- card  -->
+
+        <div class="card-box">
+            <div class="card c-first">
+                <div class="description">
+                    <h2>2000</h2>
+                    <h3>Views</h2>
+                </div>
+                <div class="card-icon">
+                    <i class="uil uil-eye"></i>
+                </div>
+            </div>
+            <div class="card c-second">
+                <div class="description">
+                    <h2>140</h2>
+                    <h3>Sales</h2>
+                </div>
+                <div class="card-icon">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                </div>
+            </div>
+            <div class="card c-third">
+                <div class="description">
+                    <h2>340</h2>
+                    <h3>Comments</h3>
+                </div>
+                <div class="card-icon">
+                    <i class="uil uil-comment-alt-heart"></i>
+                </div>
+            </div>
+            <div class="card c-fourth">
+                <div class="description">
+                    <h2>$5000</h2>
+                    <h3>Earning</h2>
+                </div>
+                <div class="card-icon">
+                    <i class="uil uil-usd-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- recent orders and customer container -->
+
+        <div class="details">
+            <div class="recent-orders">
+                <div class="order-header">
+                    <h2>Recent orders</h2>
+                    <a href="#"> View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Walton Tv</td>
+                            <td>$500</td>
+                            <td>Due</td>
+                            <td> <span class="status pending"> Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer</td>
+                            <td>$1000</td>
+                            <td>Paid</td>
+                            <td> <span class="status deliverd"> Delivered </span></td>
+                        </tr>
+                        <tr>
+                            <td>Refrigerator</td>
+                            <td>$500</td>
+                            <td>paid</td>
+                            <td> <span class="status progress"> In progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Keyboard</td>
+                            <td>$50</td>
+                            <td>paid</td>
+                            <td> <span class="status deliverd"> Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor</td>
+                            <td>$600</td>
+                            <td>paid</td>
+                            <td> <span class="status progress"> In progress </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cc Tv Camera</td>
+                            <td>$800</td>
+                            <td>Due</td>
+                            <td> <span class=" status pending"> Pending </span></td>
+                        </tr>
+                        <tr>
+                            <td>Washing machine</td>
+                            <td>$400</td>
+                            <td>paid</td>
+                            <td> <span class="status progress"> In progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Ac</td>
+                            <td>$900</td>
+                            <td>paid</td>
+                            <td> <span class="status deliverd"> Delivered </span></td>
+                        </tr>
+                        <tr>
+                            <td>Iphone 10X</td>
+                            <td>$1200</td>
+                            <td>paid</td>
+                            <td> <span class="status progress"> In progress </span></td>
+                        </tr>
+                        <tr>
+                            <td>Toyota Car</td>
+                            <td>$20000</td>
+                            <td>Due</td>
+                            <td> <span class="status pending"> Pending </span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="recent-customer">
+                <h2>Recent Customer</h2>
+                <div class="customer-container">
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-1.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Silvia</h2>
+                            <h3>Bangladesh</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-2.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Joe Root</h2>
+                            <h3>England</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-4.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Olie Pope</h2>
+                            <h3>England</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-3.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Cristina</h2>
+                            <h3>Franch</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-1.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Karina</h2>
+                            <h3>USA</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-2.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Messi</h2>
+                            <h3>Argentina</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-3.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Angelina</h2>
+                            <h3>Spain</h3>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="customer-img">
+                            <img src="./images/member-4.png" alt="">
+                        </div>
+                        <div class="customer-details">
+                            <h2>Dipu</h2>
+                            <h3>India</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <!-- My js file -->
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
